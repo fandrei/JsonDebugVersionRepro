@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
+    <ProjectReference Include="..\ClassLibrary2\ClassLibrary2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" IncludeAssets="compile" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.3.0, Culture=neutral, PublicKeyToken=null, processorArchitecture=MSIL">
+      <HintPath>..\_Lib\Newtonsoft.Json.dll</HintPath>
+      <SpecificVersion>true</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+
+</Project>
